@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://golden-llama-fde76a.netlify.app/sitemap.xml

@@ -1,0 +1,46 @@
+:root{
+  --bg:#0f1216;
+  --card:#1a1f26;
+  --text:#e6eaf0;
+  --muted:#9aa4b2;
+  --primary:#2d8cff;
+  --primary-700:#1f6ed6;
+  --ring:rgba(45,140,255,.4);
+  --shadow:0 10px 20px rgba(0,0,0,.35), 0 2px 6px rgba(0,0,0,.25)
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,Helvetica,sans-serif;
+  background:var(--bg); color:var(--text); line-height:1.6;
+}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+header{position:sticky;top:0;z-index:50;background:linear-gradient(180deg,rgba(15,18,22,.95),rgba(15,18,22,.85));backdrop-filter:blur(6px);border-bottom:1px solid #202632}
+.nav{display:flex;align-items:center;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);font-weight:600}
+.logo-mark{width:28px;height:28px;display:block;object-fit:contain}
+.logo .logo-dark-bg{display:inline-block}
+.logo .logo-light-bg{display:none}
+nav{margin-left:auto;display:flex;gap:10px;align-items:center}
+nav a{color:var(--muted);text-decoration:none;padding:10px 12px;border-radius:8px}
+nav a.active,nav a:hover{color:var(--text);background:#1a1f26}
+.cta{background:var(--primary);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600;box-shadow:var(--shadow)}
+.cta:hover{background:var(--primary-700)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center;padding:56px 0}
+h1{line-height:1.2;margin:0 0 12px;font-size:38px}
+.lead{color:var(--muted);margin-bottom:22px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{background:#223042;color:#fff;padding:12px 14px;border-radius:12px;border:1px solid #2b394a;text-decoration:none;font-weight:600}
+.btn.primary{background:var(--primary);border-color:transparent}
+.card{background:var(--card);border:1px solid #202632;border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+ul.clean{list-style:disc;margin-left:20px;color:#cdd6e3}
+.section{padding:44px 0;border-top:1px solid #202632}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+footer{padding:40px 0;color:var(--muted);text-align:center;border-top:1px solid #202632;margin-top:48px}
+.whatsapp{background:#25D366;color:#0b2a16}
+.on-light .logo .logo-dark-bg{display:none}
+.on-light .logo .logo-light-bg{display:inline-block}
+@media (max-width:880px){
+  .hero{grid-template-columns:1fr}
+  nav{display:none}
+}
