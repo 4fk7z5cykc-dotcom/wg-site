@@ -1,0 +1,1 @@
+Coloque aqui wg-logo.png e wg-logo-white.png (use as versões atuais).
